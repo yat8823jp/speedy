@@ -1,0 +1,13 @@
+.c-grid {
+	width: 100%;
+	box-sizing: border-box;
+
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ){
+	}
+	@include breakpoint( wide ){
+	}
+	@include breakpoint( full ){
+	}
+}

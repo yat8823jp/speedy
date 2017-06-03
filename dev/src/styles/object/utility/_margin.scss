@@ -1,0 +1,31 @@
+// margin
+$positions: top, right, bottom, left;
+$positions-i: t, r, b, l;
+$num: 20;
+
+@each $position in $positions {
+	$index_key: index( $positions, $position );
+	@for $i from 0 through $num {
+	.u-m#{nth($positions-i, $index_key)}#{$i * 5} {
+		margin-#{$position}: #{$i * 5 / 2}px;
+		@include breakpoint( tablet ) { margin-#{$position}: #{$i * 5}px; }
+		@include breakpoint( pc ) { margin-#{$position}: #{$i * 5}px; }
+		@include breakpoint( wide ) { margin-#{$position}: #{$i * 5}px; }
+		@include breakpoint( full ) { margin-#{$position}: #{$i * 5}px; }
+		}
+	}
+}
+
+// padding
+@each $position in $positions {
+	$index_key: index( $positions, $position );
+	@for $i from 0 through $num {
+		.u-p#{nth($positions-i, $index_key)}#{$i * 5} {
+			padding-#{$position}: #{$i * 5 / 2}px;
+			@include breakpoint( tablet ) { padding-#{$position}: #{$i * 5}px; }
+			@include breakpoint( pc ) { padding-#{$position}: #{$i * 5}px; }
+			@include breakpoint( wide ) { padding-#{$position}: #{$i * 5}px; }
+			@include breakpoint( full ) { padding-#{$position}: #{$i * 5}px; }
+		}
+	}
+}

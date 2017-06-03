@@ -1,0 +1,10 @@
+.footer {
+	@include breakpoint( tablet ){
+	}
+	@include breakpoint( pc ){
+	}
+	@include breakpoint( wide ){
+	}
+	@include breakpoint( full ){
+	}
+}

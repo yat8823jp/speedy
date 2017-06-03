@@ -1,0 +1,44 @@
+.u-disp {
+	&--smt_inline {
+		display: inline;
+		@include breakpoint( tablet ) { display: none; }
+		@include breakpoint( pc ) { display: none; }
+		@include breakpoint( wide ) { display: none; }
+		@include breakpoint( full ) { display: none; }
+	}
+	&--smt {
+		display: block;
+		@include breakpoint( tablet ) { display: none; }
+		@include breakpoint( pc ) { display: none; }
+		@include breakpoint( wide ) { display: none; }
+		@include breakpoint( full ) { display: none; }
+	}
+	&--tablet {
+		display: none;
+		@include breakpoint( tablet ) { display: block; }
+		@include breakpoint( pc ) { display: none; }
+		@include breakpoint( wide ) { display: none; }
+		@include breakpoint( full ) { display: none; }
+	}
+	&--pc {
+		display: none;
+		@include breakpoint( tablet ) { display: none; }
+		@include breakpoint( pc ) { display: block; }
+		@include breakpoint( wide ) { display: block; }
+		@include breakpoint( full ) { display: block; }
+	}
+	&--wide {
+		display: none;
+		@include breakpoint( tablet ) { display: none; }
+		@include breakpoint( pc ) { display: none; }
+		@include breakpoint( wide ) { display: block; }
+		@include breakpoint( full ) { display: block; }
+	}
+	&--full {
+		display: none;
+		@include breakpoint( tablet ) { display: none; }
+		@include breakpoint( pc ) { display: none; }
+		@include breakpoint( wide ) { display: none; }
+		@include breakpoint( full ) { display: block; }
+	}
+}
