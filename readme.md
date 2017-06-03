@@ -35,6 +35,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * 開発が終わったら、 `gulp build` コマンドを利用し、devフォルダに吐出さているファイルを元に、htdocsのフォルダに全ファイルが吐出されます。
   * 例）dev/index.html → htdocs/index.html
 * scss ディレクトリはFLOCSSを元に構成しています。お好みで構成を変えてください。[FLOCSSについてはこちら](https://github.com/hiloki/flocss)
+* サイト情報は`json`で管理。ファイルは`dev/pug/_data/site.json` の内容を編集することで、meta情報等を一括で編集が可能です。
 
 ### 起動コマンド
 ` gulp `　- defaultで設定しているtaskが起動する
