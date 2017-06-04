@@ -197,6 +197,7 @@ gulp.task( 'default', ['browser-sync'], function() {
 	gulp.watch( paths.rootDir + '/pug/**/*.pug', ['pug'] );
 	gulp.watch( paths.rootDir + '/src/styles/**/*.scss', ['scss'] );
 	gulp.watch( paths.rootDir + '/src/scripts/**/*.js', ['browserify'] );
+	gulp.watch( paths.rootDir + '/pug/**/*.json', ['pug'] );
 	gulp.watch( bsList, ['bs-reload'] );
 });
 
