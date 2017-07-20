@@ -36,6 +36,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
   * 例）dev/index.html → htdocs/index.html
 * scss ディレクトリはFLOCSSを元に構成しています。お好みで構成を変えてください。[FLOCSSについてはこちら](https://github.com/hiloki/flocss)
 * サイト情報は`json`で管理。ファイルは`dev/pug/_data/site.json` の内容を編集することで、meta情報等を一括で編集が可能です。
+* Gulpのlocals.relativePathにて各ページのルートパスを取得しています。
 
 ### 起動コマンド
 ` gulp `　- defaultで設定しているtaskが起動する
@@ -45,6 +46,9 @@ SPEEDY = Static Pug Easy Early Develop YAT
 ### Author
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
+
+#### 1.2
+* add path 追加。ルートパス情報取得
 
 #### 1.1
 * add favicon

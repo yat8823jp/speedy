@@ -4,7 +4,8 @@
   "description": "This is use Sass and Pug to create Website.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "dist": "gulp dist"
   },
   "author": "YAT",
   "license": "MIT",
@@ -43,13 +44,12 @@
   },
   "private": true,
   "dependencies": {
-  },
-  "scripts": {
-    "build": "gulp build",
-    "dist": "gulp dist"
+    "path": "^0.12.7"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "browserify-shim": {
     "jquery": "global:jQuery",

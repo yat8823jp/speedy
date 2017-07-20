@@ -30,6 +30,7 @@ var gulp = require( 'gulp' ),
 	debug = require( 'gulp-debug' ),
 	util = require( 'gulp-util' ),
 	jQuery = require( 'jquery' ),
+	path = require('path'), //path
 	// watch = require('gulp-watch'),
 	paths = {
 		rootDir : 'dev',
@@ -150,6 +151,7 @@ gulp.task( 'pug', function() {
 		} ) )
 		.pipe( data( function( file ) {
 			var locals  = JSON.parse( fs.readFileSync( paths.json + '/site.json' ) );
+			locals.relativePath = path.relative( file.base, file.path.replace( /.pug$/, '.html' ) );
 			return { 'site' : locals };
 		} ) )
 		.pipe( pug (
