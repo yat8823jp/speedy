@@ -46,5 +46,8 @@ SPEEDY = Static Pug Easy Early Develop YAT
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
+#### 1.1
+* add favicon
+
 #### 1.0
 * First release

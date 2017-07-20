@@ -3,20 +3,21 @@ meta(http-equiv="X-UA-Compatible" content="IE=edge")
 meta(name="viewport" content="width=device-width, initial-scale=1.0")
 meta(name="format-detection" content="telephone=no")
 if pageTitle
-  title #{pageTitle} | #{site.name}
+	title #{pageTitle} | #{site.name}
 else
-  title #{site.name}
+	title #{site.name}
 meta(name="description" content=pageDescription)
 meta(name="keywords" content=pageKeywords)
 
 block css
-  link(rel="stylesheet" href="css/common.css")
+	link(rel="stylesheet" href="css/common.css")
+link(rel="shortcut icon" href=site.favicon)
 
 //- OGP
 if pageOgpTitle
-  meta(property="og:title" content=pageOgpTitle + ' | ' + site.name)
+	meta(property="og:title" content=pageOgpTitle + ' | ' + site.name)
 else
-  meta(property="og:title" content=site.name)
+	meta(property="og:title" content=site.name)
 meta(property="og:type" content=pageOgpType)
 meta(property="og:image" content=pageOgpImage)
 meta(property="og:url" content=site.rootUrl + pageUrl)
