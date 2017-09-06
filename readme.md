@@ -50,8 +50,11 @@ readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
 
+#### 1.4
+* モジュールのアップデート
+
 #### 1.3
-* normalize.css をpug側で読み込むように変更
+* normalize.css をpug側で読み込むように変更。normalizeのバージョンアップ
 
 #### 1.2
 * add path 追加。ルートパス情報取得
