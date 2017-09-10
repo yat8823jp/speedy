@@ -12,6 +12,8 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * [sass](http://sass-lang.com/)
 * [pug](https://pugjs.org/language/conditionals.html)
 
+Node version v4.4.7 or more
+
 ## 設定ファイル
 
 * .editorcoding 文字コード設定
