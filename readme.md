@@ -52,6 +52,9 @@ readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
 
+#### 1.5
+* グローバルナビゲーションを追加 アクティブクラスが付くようになっています
+
 #### 1.4
 * モジュールのアップデート
 
