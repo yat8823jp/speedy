@@ -1,0 +1,10 @@
+mixin gnavi(now)
+	//- [ [ pageURL, linkURL, linkTitle ] ]
+	- var list = [ [ "index.html", "/", "ホーム" ] , [ "about/index.html", "/about/", "speedyとは" ] ]
+	nav.p-gnavi
+		ul.p-gnavi__list
+			each page in list
+				if page[0] === now
+					li.p-gnavi__item.is-active: a( href=page[1] ) #{page[2]}
+				else
+					li.p-gnavi__item: a( href=page[1] ) #{page[2]}

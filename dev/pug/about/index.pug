@@ -1,0 +1,19 @@
+extend ../includes/_layout
+append variables
+	//- Required
+	- var pageTitle= "about";
+	- var pageDescription= site.description;
+	- var pageKeywords= site.keywords;
+	//- Optional
+	- var pageOgpTitle= "about";
+	- var pageOgpImage= site.ogpImage
+	- var pageLang= "ja";
+	- var pageOgpType= "website";
+	//- Not modified
+	- var pageUrl= site.relativePath;
+
+block content
+	+gnavi( pageUrl )
+	section.p-content
+		h2.p-content__ttl Speedyとは
+		.p-content__txt Development environment for static pages using Gulp - Pug &amp; Sass &amp; browser-sync &amp; babelify &amp; browserify
