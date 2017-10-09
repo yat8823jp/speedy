@@ -115,7 +115,7 @@ gulp.task( 'pleeease', function() {
  * Imagemin
  */
 gulp.task( 'imagemin', function() {
-	var srcGlob = paths.srcDir + '/**/*.+(jpg|jpeg|png|gif|svg)';
+	var srcGlob = paths.srcDir + '/**/*.+(jpg|jpeg|png|gif|svg|ico)';
 	var dstGlob = paths.dstDir;
 	var imageminOptions = {
 		optimizationLevel: 7,
