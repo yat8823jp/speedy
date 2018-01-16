@@ -50,10 +50,12 @@ gulp.task( 'scss', function() {
 		} ) )
 		.pipe( sourcemaps.init() )
 		.pipe( bulkSass() )
-		.pipe( scss() )
 		.pipe( pleeease( {
 			sass: true,
 			minifier: false //圧縮の有無 true/false
+		} ) )
+		.pipe( scss( {
+			outputStyle: 'expanded'
 		} ) )
 		.pipe( sourcemaps.write( './' ) )
 		.pipe( gulp.dest( paths.rootDir + '/css' ) );
