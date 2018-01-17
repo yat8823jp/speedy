@@ -1,6 +1,6 @@
 {
   "name": "speedy",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "This is use Sass and Pug to create Website.",
   "main": "gulpfile.js",
   "scripts": {
