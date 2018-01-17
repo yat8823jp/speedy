@@ -12,7 +12,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * [sass](http://sass-lang.com/)
 * [pug](https://pugjs.org/language/conditionals.html)
 
-Node version v4.4.7 or more
+Node version v6.11.3 or more
 
 ## 設定ファイル
 
@@ -51,6 +51,9 @@ readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
+
+#### 1.6
+* 各種モジュールをアップデートしました
 
 #### 1.5
 * グローバルナビゲーションを追加 アクティブクラスが付くようになっています
