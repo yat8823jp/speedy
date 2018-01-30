@@ -52,6 +52,9 @@ readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
 
+#### 1.7
+* babel-coreを追加しました
+
 #### 1.6
 * 各種モジュールをアップデートしました
 
