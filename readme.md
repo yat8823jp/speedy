@@ -12,7 +12,8 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * [sass](http://sass-lang.com/)
 * [pug](https://pugjs.org/language/conditionals.html)
 
-Node version v6.11.3 or more
+* Node version v8.11.2 or more
+* Gulp 4
 
 ## 設定ファイル
 
@@ -43,14 +44,19 @@ Node version v6.11.3 or more
 readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 
 ### 起動コマンド
-` gulp `　- defaultで設定しているtaskが起動する
+gulp 4 への移行によりコマンドを npx 推奨としています。
+` npx gulp `　- defaultで設定しているtaskが起動する
 
-` gulp *** ` - *** のtaskを起動する
+` npx build `　- htdocsへの吐き出し。ドキュメントルートへ設置用ファイル
+
+` npx gulp *** ` - *** のtaskを起動する
 
 ### Author
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
+#### 2.0.0
+* Gulp 4 に対応
 
 #### 1.7
 * babel-coreを追加しました

@@ -3,7 +3,6 @@
 }
 
 body {
-  font-size: 14px;
   font-size: 1.4rem;
 }
 
@@ -20,7 +19,7 @@ img {
   position: relative;
 }
 
-.c-arrow:after, .c-arrow--red:after {
+.c-arrow::after, .c-arrow--red::after {
   content: "";
   display: block;
   width: 7px;
@@ -35,7 +34,7 @@ img {
   margin-top: -5px;
 }
 
-.c-arrow--red:after {
+.c-arrow--red::after {
   border-top: 2px solid #f00;
   border-right: 2px solid #f00;
 }
@@ -4958,32 +4957,26 @@ img {
 }
 
 .u-typo--lv1 {
-  font-size: 32px;
   font-size: 3.2rem;
 }
 
 .u-typo--lv2 {
-  font-size: 26px;
   font-size: 2.6rem;
 }
 
 .u-typo--lv3 {
-  font-size: 24px;
   font-size: 2.4rem;
 }
 
 .u-typo--lv4 {
-  font-size: 20px;
   font-size: 2.0rem;
 }
 
 .u-typo--lv5 {
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
 .u-typo--lv6 {
-  font-size: 16px;
   font-size: 1.6rem;
 }
 
