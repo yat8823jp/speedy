@@ -55,6 +55,9 @@ gulp 4 への移行によりコマンドを npx 推奨としています。
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
 
+#### 2.0.1
+* JavaScriptファイルの監視バグ修正
+
 #### 2.0.0
 * Gulp 4 に対応
 

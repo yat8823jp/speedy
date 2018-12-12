@@ -64,7 +64,7 @@ gulp.task( 'scss', function( done ) {
  * JavaScript
  */
 
-gulp.task( 'browserify', function () {
+gulp.task( 'browserify', function ( done ) {
 	jQuery = require( 'jquery' );
 	var option = {
 		bundleOption: {
@@ -82,7 +82,7 @@ gulp.task( 'browserify', function () {
 			presets: ["es2015"]
 		} ) )
 		.transform( browserifyShim );
-	var bundle = function () {
+	bundle = function () {
 		b.bundle()
 			.pipe( plumber ( {
 				errorHandler: notify.onError( 'Error: <%= error.message %>' )
@@ -94,6 +94,7 @@ gulp.task( 'browserify', function () {
 		var bundler = watchify( b );
 		bundler.on( 'update', bundle );
 	}
+	done();
 	return bundle();
 });
 
