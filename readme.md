@@ -35,7 +35,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
   * JavaScriptは必要となるモジュール用にファイルを作成し、`main.js`で`require`してください。コンパイル時`bundle.js`として`dev/js/`の中に吐き出されます。
   * cssファイルは開発用にscssファイルが`dev/styles/`の中に入っています。吐き出し先は`dev/css/common.css`となり、同時にmapファイルが吐き出されます。
 * リセットにnormalize を使用しています。
-* 開発が終わったら、 `gulp build` コマンドを利用し、devフォルダに吐出さているファイルを元に、htdocsのフォルダに全ファイルが吐出されます。
+* 開発が終わったら、 `npx gulp build` コマンドを利用し、devフォルダに吐出さているファイルを元に、htdocsのフォルダに全ファイルが吐出されます。
   * 例）dev/index.html → htdocs/index.html
 * scss ディレクトリはFLOCSSを元に構成しています。お好みで構成を変えてください。[FLOCSSについてはこちら](https://github.com/hiloki/flocss)
 * サイト情報は`json`で管理。ファイルは`dev/pug/_data/site.json` の内容を編集することで、meta情報等を一括で編集が可能です。
