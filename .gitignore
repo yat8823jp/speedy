@@ -4,3 +4,4 @@ htdocs/
 .git
 .DS_Store
 package-lock.json
+.node-version
