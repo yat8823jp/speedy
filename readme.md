@@ -12,7 +12,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * [sass](http://sass-lang.com/)
 * [pug](https://pugjs.org/language/conditionals.html)
 
-* Node version v8.11.2 or more
+* Node version v12.13.1 or more
 * Gulp 4
 
 ## 設定ファイル
@@ -54,6 +54,9 @@ gulp 4 への移行によりコマンドを npx 推奨としています。
 ### Author
 
 YAT [http://wp.yat-net.com](http://wp.yat-net.com)
+
+#### 2.1.1
+* Node の対応バージョンを12.13.1にアップデート
 
 #### 2.0.1
 * JavaScriptファイルの監視バグ修正
