@@ -1,7 +1,7 @@
 /*
  * Global variables
  */
-var gulp = require( 'gulp' ),
+let gulp = require( 'gulp' ),
 	bulkSass = require( 'gulp-sass-bulk-import' ),
 	scss = require( 'gulp-sass' ),
 	browserSync = require( 'browser-sync' ),//ブラウザシンク
@@ -66,7 +66,7 @@ gulp.task( 'scss', function( done ) {
 
 gulp.task( 'browserify', function ( done ) {
 	jQuery = require( 'jquery' );
-	var option = {
+	let option = {
 		bundleOption: {
 			cache: {}, packageCache: {}, fullPaths: false,
 			debug: true,
@@ -76,7 +76,7 @@ gulp.task( 'browserify', function ( done ) {
 		dest: paths.rootDir + '/js',
 		filename: 'bundle.js'
 	};
-	var b = browserify ( option.bundleOption )
+	let b = browserify ( option.bundleOption )
 		.transform( babelify.configure ( {
 			compact: false,
 			presets: ["es2015"]
@@ -91,7 +91,7 @@ gulp.task( 'browserify', function ( done ) {
 			.pipe( gulp.dest ( option.dest ) );
 	};
 	if ( global.isWatching ) {
-		var bundler = watchify( b );
+		let bundler = watchify( b );
 		bundler.on( 'update', bundle );
 	}
 	done();
@@ -118,9 +118,9 @@ gulp.task( 'pleeease', function( done ) {
  * Imagemin
  */
 gulp.task( 'imagemin', function( done ) {
-	var srcGlob = paths.srcDir + '/**/*.+(jpg|jpeg|png|gif|svg|ico)';
-	var dstGlob = paths.dstDir;
-	var imageminOptions = {
+	let srcGlob = paths.srcDir + '/**/*.+(jpg|jpeg|png|gif|svg|ico)';
+	let dstGlob = paths.dstDir;
+	let imageminOptions = {
 		optimizationLevel: 7,
 		use: imageminPngquant( {quality: '65-80', speed: 1 } )
 	};
@@ -155,7 +155,7 @@ gulp.task( 'pug', function( done ) {
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
 		} ) )
 		.pipe( data( function( file ) {
-			var locals  = JSON.parse( fs.readFileSync( paths.json + '/site.json' ) );
+			let locals  = JSON.parse( fs.readFileSync( paths.json + '/site.json' ) );
 			locals.relativePath = path.relative( file.base, file.path.replace( /.pug$/, '.html' ) );
 			return { 'site' : locals };
 		} ) )
@@ -199,7 +199,7 @@ gulp.task( 'setWatch', function ( done ) {
  * Default
  */
 gulp.task( 'default', gulp.series( 'browser-sync', function() {
-	var bsList = [
+	let bsList = [
 		paths.rootDir + '/**/*.html',
 		paths.rootDir + '/**/*.php',
 		paths.rootDir + '/js/**/*.js',
