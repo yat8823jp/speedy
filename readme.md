@@ -41,6 +41,7 @@ SPEEDY = Static Pug Easy Early Develop YAT
 * サイト情報は`json`で管理。ファイルは`dev/pug/_data/site.json` の内容を編集することで、meta情報等を一括で編集が可能です。
 * Gulpのlocals.relativePathにて各ページのルートパスを取得しています。
 
+
 readmore [link:yatのBlog](https://wp.yat-net.com/?p=5898)
 
 ### 起動コマンド
